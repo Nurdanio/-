@@ -1,0 +1,28 @@
+{
+  "name": "esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "cross-env mode=production ts-node config/build/prod-config.ts",
+    "build:dev": "cross-env mode=development ts-node config/build/prod-config.ts",
+    "start": "ts-node config/build/dev-config.ts"
+  },
+  "keywords": [],
+  "author": "ANB",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.14.48",
+    "express": "^4.19.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
